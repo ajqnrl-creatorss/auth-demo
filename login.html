@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>firebase-login page</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
 
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- kakao login -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js" crossorigin="anonymous"></script>
+    <script src="js/firebase/kakaoinit.js" defer></script>
     <script type="module" src="js/login.js" defer></script>
   </head>
   <body class="bg-blue-100 flex items-center justify-center h-screen">
     <div class="bg-white shadow-lg rounded-lg sm:w-96 w-11/12 p-6">
       <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">로그인</h1>
 
-      <div class="space-y-4">
+      <div class="space-y-4 text-center">
         <button
           id="google-login-btn"
           class="w-full flex items-center justify-center bg-red-500 text-white py-2 px-4 shadow-md rounded-lg hover:bg-red-600"
@@ -31,9 +32,14 @@
         >
           <i class="fa-brands fa-github mr-2"></i>Github로 로그인
         </button>
+
+        <button
+          id="kakao-login-btn" class="focus:outline-none">
+          <img src="img/kakao_login_medium_wide.png" alt="카카오톡 로그인">
+        </button>
       </div>
 
-      <div class="relative my-6">
+      <div class="relative my-6"> 
         <div class="absolute inset-0 flex items-center">
           <div class="w-full border-t borer-gray-300"></div>
         </div>
