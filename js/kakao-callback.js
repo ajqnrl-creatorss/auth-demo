@@ -8,7 +8,7 @@ if (code) {
         body: new URLSearchParams({
             grant_type: "authorization_code",
             client_id: "bd3c383aaed7598c42b5d40e49e54f93",
-            redirect_uri: "https://127.0.0.1:5500/kakao-callback.html",
+            redirect_uri: "https://127.0.0.1:5500/ajqnrl-creatorss.github.io/kakao-callback.html",
             code: code,
         }),
     })

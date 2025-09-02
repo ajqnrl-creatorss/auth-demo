@@ -5,6 +5,6 @@ console.log(Kakao.isInitialized());
 
 document.getElementById("kakao-login-btn").addEventListener('click', () =>{
     Kakao.Auth.authorize({
-        redirectUri : "https://127.0.0.1:5500/kakao-callback.html"
+        redirectUri : "https://127.0.0.1:5500/ajqnrl-creatorss.github.io/kakao-callback.html"
     })
 })
